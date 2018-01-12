@@ -3,7 +3,7 @@
     "description": "适用于 laravel5.5+ 的一套账号、多身份、多角色的权限系统",
     "type": "library",
     "require": {
-        "laravel/laravel": "~5.5"
+        
     },
     "license": "MIT",
     "authors": [
@@ -21,10 +21,10 @@
     "extra": {
     	"laravel": {
     		"providers": [
-    			"Daijulong\\LaravelRoles\\Supports\\PermissionProvider"
+    			"Daijulong\\LaravelRoles\\Providers\\PermissionProvider"
     		],
     		"aliases": {
-              "Permission": "Daijulong\\LaravelRoles\\Supports\\PermissionFacade"
+              "Permission": "Daijulong\\LaravelRoles\\Facades\\PermissionFacade"
             }
     	}
     }

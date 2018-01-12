@@ -92,7 +92,6 @@ class CreateUserRolesTable extends Migration
             $table->string('description')->nullable()->comment('角色描述');
             $table->text('permissions')->nullable()->comment('角色权限');
             $table->timestamps();
-            $table->softDeletes();
         });
 
         DB::statement("ALTER TABLE `" . config('database.connections.mysql.prefix') . "user_roles` comment '普通用户角色'");
