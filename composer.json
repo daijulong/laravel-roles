@@ -1,0 +1,31 @@
+{
+    "name": "daijulong/laravel-roles",
+    "description": "适用于 laravel5.5+ 的一套账号、多身份、多角色的权限系统",
+    "type": "library",
+    "require": {
+        "laravel/laravel": "~5.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "daijulong",
+            "email": "daijulong@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Daijulong\\LaravelRoles\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+    	"laravel": {
+    		"providers": [
+    			"Daijulong\\LaravelRoles\\Supports\\PermissionProvider"
+    		],
+    		"aliases": {
+              "Permission": "Daijulong\\LaravelRoles\\Supports\\PermissionFacade"
+            }
+    	}
+    }
+}
