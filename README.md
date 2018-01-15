@@ -315,7 +315,7 @@ class UserPermission
 {
     public function handle ($request, Closure $next)
     {
-        if (Auth::check() && Auth::user()->enabled) {
+        if (Auth::check()) {
             Permission::loadConfigAndSetUser(Auth::user());
         }
         return $next($request);
